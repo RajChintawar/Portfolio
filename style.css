@@ -1,21 +1,18 @@
-
-
 header {
-    background:#d9d9d9;
+    background: #d9d9d9;
     color: whitesmoke;
     padding: 1rem;
     text-align: right;
-    
 }
-
 
 nav ul {
     list-style: none;
 }
-nav ul p{
+
+nav ul p {
     color: black;
     text-align: left;
-   font-weight: bold;
+    font-weight: bold;
 }
 
 nav ul li {
@@ -31,207 +28,271 @@ nav ul li a {
 }
 
 nav ul li a:hover,
-nav ul li a:active{
+nav ul li a:active {
     color: blue;
 }
 
+video {
+    width: 100%; /* Made the video responsive */
+}
 
- video{
-    width: 1367px;
-    
- }   
-h1{
+h1 {
     margin-left: 598px;
- }
- h2
-{
+}
+
+h2 {
     margin-left: 590px;
     font-size: 60px;
 }
 
- p{
+p {
     text-align: start;
     font-size: 16px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-weight: 55;
-line-height: 24px;
- }
-p:hover{
-    transform:scale(1.01) ;
-    z-index:2.0 ;
+    font-weight: 55;
+    line-height: 24px;
 }
 
-main{
+p:hover {
+    transform: scale(1.01);
+    z-index: 2.0;
+}
+
+main {
     padding: 25px;
 }
 
-
-
- .Links{
+.Links {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 12px;
- }
- .Link{
+}
+
+.Link {
     border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
+}
 
- }
- .Link img{
+.Link img {
     max-width: 55%;
-     height: 250px;
- }
- .Link:hover{
-    transform:scale(1.05) ;
-    z-index:2 ;
-    }
+    height: 250px;
+}
+
+.Link:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
 
 .Link a {
     text-decoration: none;
     color: black;
 }
 
-    button{
-        border-radius: 50px;
-        background-color: white;
-        font-weight: bold;
-        font-size: 20px;
-     padding: 16px 28px;
-        margin-left: 615px;
-        cursor: pointer;
-    }
-button:hover{
-        transform:scale(1.09);
-        z-index: 2.0;
+button {
+    border-radius: 50px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 16px 28px;
+    margin-left: 615px;
+    cursor: pointer;
 }
-.contact{
-        background-color: #d9d9d9;
-        width: 900px;
-        margin-left:230px; 
-        border-radius: 2rem;
-        
-    }
-.contact h3{
+
+button:hover {
+    transform: scale(1.09);
+    z-index: 2.0;
+}
+
+.contact {
+    background-color: #d9d9d9;
+    width: 900px;
+    margin-left: 230px;
+    border-radius: 2rem;
+}
+
+.contact h3 {
     margin-bottom: 45px;
     color: black;
     font-size: 40px;
     margin-left: 335px;
-    
 }
-.contact form{
+
+.contact form {
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
     margin: 1rem auto;
     text-align: center;
 }
-.contact form .input-box{
+
+.contact form .input-box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .contact form .input-box input,
-.contact form textarea{
+.contact form textarea {
     width: 100%;
     padding: 2rem;
     font-size: 1.5rem;
-    color:black ;
-    background-color:white;
+    color: black;
+    background-color: white;
     border-radius: 2rem;
     border: 4px solid var(black);
-    margin: 1rem 0 ;
-    
+    margin: 1rem 0;
 }
+
 .contact form .btn {
     margin-top: 1rem;
     border-radius: 50px;
     background-color: white;
     font-weight: bold;
     font-size: 20px;
- padding: 16px 28px;
+    padding: 16px 28px;
     cursor: pointer;
     margin-bottom: 28px;
-    
 }
-footer{
-        padding-left: 580px;
-        font-weight: lighter;
+
+footer {
+    padding-left: 580px;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 1024px) {
+    /* For tablets */
+    video {
+        width: 100%; /* Video responsive on tablets */
     }
-@media screen and (max-width: 768px) {
+
     header {
         text-align: center;
     }
+
     nav ul {
         text-align: center;
         padding: 0;
     }
+
     nav ul li {
         display: block;
         margin: 10px 0;
     }
-    video {
-        width: 100%;
-    }
+
     h1, h2 {
         text-align: center;
         margin-left: 0;
         font-size: 40px;
     }
+
     button {
         display: block;
         margin: 20px auto;
     }
+
     .contact {
         width: 90%;
         margin: 0 auto;
     }
+
     .contact h3 {
         margin-left: 0;
         text-align: center;
     }
+
     footer {
         text-align: center;
         padding-left: 0;
     }
 }
 
-/* For mobile phones (480px and below) */
+@media screen and (max-width: 768px) {
+    /* For smartphones and smaller tablets */
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    video {
+        width: 100%; /* Ensures the video resizes well */
+    }
+
+    h1, h2 {
+        text-align: center;
+        margin-left: 0;
+        font-size: 30px;
+    }
+
+    button {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .contact {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact h3 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
 @media screen and (max-width: 480px) {
+    /* For mobile phones */
     nav ul p {
         text-align: center;
         font-size: 18px;
     }
+
     .Links {
         grid-template-columns: 1fr;
     }
+
     .Link img {
         max-width: 100%;
         height: auto;
     }
+
     .contact form {
         flex-direction: column;
         gap: 0.5rem;
     }
+
     .contact form .input-box input,
     .contact form textarea {
         font-size: 1rem;
         padding: 1rem;
     }
+
     .contact h3 {
         font-size: 30px;
     }
+
     footer {
         font-size: 14px;
     }
+
+    button {
+        margin: 10px auto;
+        font-size: 16px;
+        padding: 12px 24px;
+    }
 }
-
-
-    
-  
-
-
-    
-  
