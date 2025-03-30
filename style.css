@@ -160,6 +160,73 @@ footer{
         padding-left: 580px;
         font-weight: lighter;
     }
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    video {
+        width: 100%;
+    }
+    h1, h2 {
+        text-align: center;
+        margin-left: 0;
+        font-size: 40px;
+    }
+    button {
+        display: block;
+        margin: 20px auto;
+    }
+    .contact {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contact h3 {
+        margin-left: 0;
+        text-align: center;
+    }
+    footer {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+/* For mobile phones (480px and below) */
+@media screen and (max-width: 480px) {
+    nav ul p {
+        text-align: center;
+        font-size: 18px;
+    }
+    .Links {
+        grid-template-columns: 1fr;
+    }
+    .Link img {
+        max-width: 100%;
+        height: auto;
+    }
+    .contact form {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .contact form .input-box input,
+    .contact form textarea {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .contact h3 {
+        font-size: 30px;
+    }
+    footer {
+        font-size: 14px;
+    }
+}
 
 
     
