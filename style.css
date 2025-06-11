@@ -392,6 +392,10 @@ body.dark-mode .contact form textarea {
   border-color: #666;
 }
 
+body.dark-mode #typed {
+  color: #ffffff;
+}
+
 /* FOOTER */
 body.dark-mode footer {
   color: #ffffff;
