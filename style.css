@@ -156,6 +156,9 @@ main {
   background-color: #e6f0ff;
 }
 
+.Link a{
+  transform: none;}
+
 
 
 /* BUTTON */
