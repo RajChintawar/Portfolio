@@ -464,4 +464,34 @@ body.dark-mode .view-btn {
 body.dark-mode .view-btn:hover {
   background-color: #007acc;
 }
+body.dark-mode .contact {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+body.dark-mode .contact h3.heading {
+  color: #fff;
+}
+
+body.dark-mode .input-box input,
+body.dark-mode textarea {
+  background-color: #1c1c1c;
+  color: #fff;
+  border-color: #555;
+}
+
+body.dark-mode .input-box input:focus,
+body.dark-mode textarea:focus {
+  border-color: #00aaff;
+  box-shadow: 0 0 0 3px rgba(0, 170, 255, 0.3);
+}
+
+body.dark-mode .btn {
+  background-color: #00aaff;
+  color: black;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #0088cc;
+}
 
