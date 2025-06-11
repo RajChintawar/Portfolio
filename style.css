@@ -167,7 +167,7 @@ main {
 
 
 /* BUTTON */
-button {
+/* button {
   border-radius: 50px;
   background-color: white;
   font-weight: bold;
@@ -181,7 +181,7 @@ button {
 button:hover {
   transform: scale(1.09);
   z-index: 2;
-}
+} */
 
 /* CONTACT SECTION */
 .contact {
