@@ -338,73 +338,75 @@ body.dark-mode nav ul li a.active {
 /* DARK MODE ENHANCEMENTS */
 
 /* DARK NAVBAR */
+body.dark-mode {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+/* HEADER ONLY DARKER */
 body.dark-mode header {
-  background-color: #0d0d0d; /* deeper dark */
+  background: #1e1e1e;
   color: #ffffff;
 }
 
-body.dark-mode nav ul p {
+/* NAVBAR TEXT */
+body.dark-mode nav ul li a {
   color: #ffffff;
 }
 
-body.dark-mode nav ul li a,
-body.dark-mode nav ul li a:visited {
-  color: #ffffff;
+body.dark-mode nav ul li a.active {
+  color: #00aaff;
+  border-bottom: 2px solid #00aaff;
 }
 
-body.dark-mode nav ul li a:hover {
-  color: #66ccff;
-}
-
-/* TEXT UNIVERSAL OVERRIDE */
+/* SECTION HEADINGS */
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode h4,
 body.dark-mode h5,
-body.dark-mode h6,
-body.dark-mode p,
-body.dark-mode span,
-body.dark-mode li,
-body.dark-mode a,
-body.dark-mode #typed {
-  color: #ffffff !important;
-}
-
-/* BUTTONS */
-body.dark-mode button,
-body.dark-mode .btn {
-  background-color: #2b2b2b;
+body.dark-mode h6 {
   color: #ffffff;
-  border: 1px solid #555;
 }
 
-/* CONTACT FORM DARK */
-body.dark-mode .contact {
-  background-color: #2a2a2a;
-}
-
-body.dark-mode .contact form .input-box input,
-body.dark-mode .contact form textarea {
-  background-color: #1c1c1c;
+/* PARAGRAPH */
+body.dark-mode p {
   color: #ffffff;
-  border: 2px solid #666;
 }
 
-/* LINKS */
+/* LINKS SECTION */
 body.dark-mode .Link {
-  border-color: #444;
+  background-color: #3a3a3a;
+  color: #ffffff;
+  border-color: #555;
 }
 
 body.dark-mode .Link a {
   color: #ffffff;
 }
 
-body.dark-mode .Link:hover {
-  background-color: #1b1b1b;
+/* BUTTON */
+body.dark-mode button,
+body.dark-mode .contact form .btn {
+  background-color: #444;
+  color: #ffffff;
+  border: 2px solid #666;
 }
 
+/* CONTACT */
+body.dark-mode .contact {
+  background-color: #3b3b3b;
+  color: #ffffff;
+}
 
+body.dark-mode .contact form .input-box input,
+body.dark-mode .contact form textarea {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border-color: #666;
+}
 
-
-  
+/* FOOTER */
+body.dark-mode footer {
+  color: #ffffff;
+}
