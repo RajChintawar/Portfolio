@@ -216,7 +216,7 @@ button:hover {
 }
 
 .contact form .input-box input,
-textarea {
+.contact form .textarea {
   flex: 1;
   padding: 14px 18px;
   font-size: 16px;
@@ -227,13 +227,13 @@ textarea {
   color: #222;
 }
 .input-box input:focus,
-textarea:focus {
+.contact form .textarea:focus {
   outline: none;
   border-color: #007bff;
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
 }
 
-textarea {
+.contact form .textarea {
   resize: vertical;
   min-height: 150px;
 }
