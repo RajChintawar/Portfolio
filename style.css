@@ -59,13 +59,29 @@ video {
     width: 100%; /* Made the video responsive */
 }
 
-.intro-text {
-    font-size: 2rem;
-    text-align: center;
-    margin: 30px auto;
-    color: #333;
-    font-weight: bold;
+.video-container {
+    position: relative;
+    width: 100%;
 }
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    z-index: 10;
+    text-align: center;
+}
+
 
 
 
