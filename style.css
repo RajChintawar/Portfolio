@@ -431,7 +431,7 @@ body.dark-mode footer {
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -440,3 +440,12 @@ body.dark-mode footer {
 .view-btn:hover {
   background-color: #0056b3;
 }
+body.dark-mode .view-btn {
+  background-color: #0099ff;
+  color: #fff;
+}
+
+body.dark-mode .view-btn:hover {
+  background-color: #007acc;
+}
+
