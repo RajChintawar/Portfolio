@@ -307,3 +307,23 @@ footer {
     padding: 12px 24px;
   }
 }
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+
+///dark modeee
+body.dark-mode header {
+    background: #1e1e1e;
+    color: #f0f0f0;
+}
+
+body.dark-mode nav ul li a {
+    color: #ccc;
+}
+
+body.dark-mode nav ul li a.active {
+    color: #00aaff;
+    border-bottom: 2px solid #00aaff;
