@@ -59,14 +59,14 @@ video {
     width: 100%; /* Made the video responsive */
 }
 
-h1 {
-    margin-left: 598px;
+h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #222;
 }
 
-h2 {
-    margin-left: 590px;
-    font-size: 60px;
-}
 
 p {
     text-align: start;
