@@ -21,17 +21,13 @@ window.addEventListener("scroll", () => {
     });
 });
 
-// Typing effect using Typed.js
-const typed = new Typed('#typed', {
+var typed = new Typed("#typed", {
   strings: [
-    "Hi, I'm Raj Chintawar.",
-    "A Computer Science Student.",
-    "A Tech Enthusiast.",
-    "A Web Developer.",
-    "A Lifelong Learner."
+    "Hi, I'm Raj Chintawar!",
+    "A Computer Science Student",
+    "Future Engineer | Web Developer | Tech Enthusiast",
   ],
-  typeSpeed: 50,
-  backSpeed: 25,
-  backDelay: 1500,
+  typeSpeed: 60,
+  backSpeed: 40,
   loop: true
 });
