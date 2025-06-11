@@ -90,16 +90,33 @@ nav ul li a.active {
 
 
 /* Responsive for mobile */
-@media (max-width: 768px) {
-    .intro-section {
-        flex-direction: column;
-        text-align: center;
-    }
+@media screen and (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
 
-    .intro-image img {
-        width: 220px;
-        height: 220px;
-    }
+  .intro-text {
+    font-size: 28px;
+    padding: 0 1rem;
+  }
+
+  .intro-image img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro-text {
+    font-size: 22px;
+  }
+
+  .intro-image img {
+    width: 140px;
+    height: 140px;
+  }
 }
 
 
@@ -108,15 +125,6 @@ nav ul li a.active {
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
 }
-
-
-
-
-
-
-
-
-
 h2 {
     text-align: center;
     font-size: 42px;
