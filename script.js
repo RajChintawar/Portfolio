@@ -32,3 +32,18 @@ var typed = new Typed("#typed", {
   loop: true
 });
 
+const toggleBtn = document.getElementById("theme-toggle");
+const prefersDark = localStorage.getItem("theme") === "dark";
+
+// On load, apply saved theme
+if (prefersDark) {
+    document.body.classList.add("dark-mode");
+    toggleBtn.textContent = "☀️";
+}
+
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    const isDark = document.body.classList.contains("dark-mode");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+    toggleBtn.textContent = isDark ? "☀️" : "🌙";
+});
