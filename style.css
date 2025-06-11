@@ -156,7 +156,7 @@ main {
   background-color: #e6f0ff;
 }
 
-.Link p {
+.Link a{
   margin-top: 10px;
   color: #333;
   font-size: 15px;
