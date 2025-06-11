@@ -1,116 +1,107 @@
 header {
-    background: #d9d9d9;
-    color: whitesmoke;
-    padding: 1rem;
-    text-align: right;
-    position: sticky; /* NEW */
-    top: 0;            /* NEW */
-    z-index: 1000;     /* Ensure it stays on top */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  background: #d9d9d9;
+  color: whitesmoke;
+  padding: 1rem;
+  text-align: right;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-
-
 nav ul {
-    list-style: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul p {
-    color: black;
-    text-align: left;
-    font-weight: bold;
+  color: black;
+  text-align: left;
+  font-weight: bold;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 80px;
-    color: black;
+  display: inline;
+  margin-right: 80px;
+  color: black;
 }
 
 nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-weight: 300;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
 }
 
 nav ul li a:hover,
 nav ul li a:active {
-    color: blue;
+  color: blue;
 }
-
-
 
 nav ul li a.active {
-    color: red;
-    font-weight: bold;
-    border-bottom: 2px solid red;
+  color: red;
+  font-weight: bold;
+  border-bottom: 2px solid red;
 }
 
-
-
-
-
-
-
-
+/* INTRO SECTION */
 .intro-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 80px;
-    gap: 40px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .intro-text {
-    flex: 1;
-    font-size: 36px;
-    font-weight: bold;
-    color: #111;
-    min-width: 300px;
+  flex: 1;
+  font-size: 36px;
+  font-weight: bold;
+  color: #111;
+  min-width: 280px;
 }
 
 .intro-image img {
-    width: 320px;      
-    height: 320px;     
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #333;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #333;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
 .intro-image img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-
-/* Responsive for mobile */
+/* RESPONSIVE INTRO */
 @media screen and (max-width: 768px) {
   .intro-section {
     flex-direction: column;
     text-align: center;
-    gap: 20px;
+    padding: 40px 20px;
   }
 
   .intro-text {
-    font-size: 28px;
+    font-size: 26px;
     padding: 0 1rem;
   }
 
   .intro-image img {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .intro-text {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .intro-image img {
@@ -119,269 +110,180 @@ nav ul li a.active {
   }
 }
 
-
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to   { opacity: 1; transform: translateY(0); }
-}
+/* GENERAL */
 h2 {
-    text-align: center;
-    font-size: 42px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    color: #222;
+  text-align: center;
+  font-size: 42px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #222;
 }
-
 
 p {
-    text-align: start;
-    font-size: 16px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 55;
-    line-height: 24px;
+  text-align: start;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 p:hover {
-    transform: scale(1.01);
-    z-index: 2.0;
+  transform: scale(1.01);
+  z-index: 2;
 }
 
 main {
-    padding: 25px;
+  padding: 25px;
 }
 
+/* LINKS GRID */
 .Links {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
 }
 
 .Link {
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
 }
 
 .Link img {
-    max-width: 55%;
-    height: 250px;
+  max-width: 100%;
+  height: auto;
 }
 
 .Link:hover {
-    transform: scale(1.05);
-    z-index: 2;
+  transform: scale(1.05);
+  z-index: 2;
 }
 
 .Link a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
+/* BUTTONS */
 button {
-    border-radius: 50px;
-    background-color: white;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 16px 28px;
-    margin-left: 615px;
-    cursor: pointer;
+  border-radius: 50px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 16px 28px;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
 }
 
 button:hover {
-    transform: scale(1.09);
-    z-index: 2.0;
+  transform: scale(1.09);
+  z-index: 2;
 }
 
+/* CONTACT */
 .contact {
-    background-color: #d9d9d9;
-    width: 900px;
-    margin-left: 230px;
-    border-radius: 2rem;
+  background-color: #d9d9d9;
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 2rem;
+  padding: 2rem;
 }
 
 .contact h3 {
-    margin-bottom: 45px;
-    color: black;
-    font-size: 40px;
-    margin-left: 335px;
+  margin-bottom: 45px;
+  color: black;
+  font-size: 36px;
+  text-align: center;
 }
 
 .contact form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin: 1rem auto;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .contact form .input-box {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .contact form .input-box input,
 .contact form textarea {
-    width: 100%;
-    padding: 2rem;
-    font-size: 1.5rem;
-    color: black;
-    background-color: white;
-    border-radius: 2rem;
-    border: 4px solid var(black);
-    margin: 1rem 0;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  color: black;
+  background-color: white;
+  border-radius: 2rem;
+  border: 2px solid black;
+  margin: 1rem 0;
 }
 
 .contact form .btn {
-    margin-top: 1rem;
-    border-radius: 50px;
-    background-color: white;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 16px 28px;
-    cursor: pointer;
-    margin-bottom: 28px;
+  margin-top: 1rem;
+  border-radius: 50px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 16px 28px;
+  cursor: pointer;
+  margin-bottom: 28px;
 }
 
+/* FOOTER */
 footer {
-    padding-left: 580px;
-    font-weight: lighter;
+  padding: 1rem;
+  text-align: center;
+  font-weight: lighter;
 }
 
-@media screen and (max-width: 1024px) {
-    /* For tablets */
-    video {
-        width: 100%; /* Video responsive on tablets */
-    }
-
-    header {
-        text-align: center;
-    }
-
-    nav ul {
-        text-align: center;
-        padding: 0;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    h1, h2 {
-        text-align: center;
-        margin-left: 0;
-        font-size: 40px;
-    }
-
-    button {
-        display: block;
-        margin: 20px auto;
-    }
-
-    .contact {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .contact h3 {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    footer {
-        text-align: center;
-        padding-left: 0;
-    }
-}
-
+/* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
-    /* For smartphones and smaller tablets */
-    header {
-        text-align: center;
-    }
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
 
-    nav ul {
-        text-align: center;
-        padding: 0;
-    }
+  h1, h2 {
+    font-size: 32px;
+  }
 
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    video {
-        width: 100%; /* Ensures the video resizes well */
-    }
-
-    h1, h2 {
-        text-align: center;
-        margin-left: 0;
-        font-size: 30px;
-    }
-
-    button {
-        display: block;
-        margin: 20px auto;
-    }
-
-    .contact {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .contact h3 {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    footer {
-        text-align: center;
-        padding-left: 0;
-    }
+  .contact h3 {
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    /* For mobile phones */
-    nav ul p {
-        text-align: center;
-        font-size: 18px;
-    }
+  nav ul p {
+    text-align: center;
+    font-size: 18px;
+  }
 
-    .Links {
-        grid-template-columns: 1fr;
-    }
+  .contact form {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 
-    .Link img {
-        max-width: 100%;
-        height: auto;
-    }
+  .contact form .input-box input,
+  .contact form textarea {
+    font-size: 1rem;
+    padding: 1rem;
+  }
 
-    .contact form {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+  footer {
+    font-size: 14px;
+  }
 
-    .contact form .input-box input,
-    .contact form textarea {
-        font-size: 1rem;
-        padding: 1rem;
-    }
-
-    .contact h3 {
-        font-size: 30px;
-    }
-
-    footer {
-        font-size: 14px;
-    }
-
-    button {
-        margin: 10px auto;
-        font-size: 16px;
-        padding: 12px 24px;
-    }
+  button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
 }
