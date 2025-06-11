@@ -24,10 +24,11 @@ window.addEventListener("scroll", () => {
 var typed = new Typed("#typed", {
   strings: [
     "Hi, I'm Raj Chintawar!",
-    "A Computer Science Student",
-    "Future Engineer | Web Developer | Tech Enthusiast",
+    "Engineering Student",
+    "Web Developer | Problem Solver | Tech Enthusiast"
   ],
   typeSpeed: 60,
   backSpeed: 40,
   loop: true
 });
+
