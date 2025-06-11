@@ -260,7 +260,32 @@ footer {
   padding: 1rem;
   text-align: center;
   font-weight: lighter;
+  background-color: transparent;
 }
+
+footer .social-icons {
+  margin-bottom: 0.5rem;
+}
+
+footer .social-icons a {
+  color: #222;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #007bff; /* Blue on hover */
+}
+
+body.dark-mode footer .social-icons a {
+  color: #ccc;
+}
+
+body.dark-mode footer .social-icons a:hover {
+  color: #00aaff;
+}
+
 
 /* RESPONSIVE MEDIA QUERIES */
 @media screen and (max-width: 768px) {
