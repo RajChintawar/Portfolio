@@ -33,18 +33,19 @@ var typed = new Typed("#typed", {
 });
 
 const toggleBtn = document.getElementById("theme-toggle");
+const savedTheme = localStorage.getItem("theme");
+const prefersSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-// Apply saved theme preference on load
-if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark-mode");
-    toggleBtn.textContent = "☀️";
+if (savedTheme === "dark" || (!savedTheme && prefersSystemDark)) {
+  document.body.classList.add("dark-mode");
+  toggleBtn.textContent = "☀️";
 } else {
-    toggleBtn.textContent = "🌙";
+  toggleBtn.textContent = "🌙";
 }
 
 toggleBtn.addEventListener("click", () => {
-    const isDark = document.body.classList.toggle("dark-mode");
-    localStorage.setItem("theme", isDark ? "dark" : "light");
-    toggleBtn.textContent = isDark ? "☀️" : "🌙";
+  const isDark = document.body.classList.toggle("dark-mode");
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+  toggleBtn.textContent = isDark ? "☀️" : "🌙";
 });
 
