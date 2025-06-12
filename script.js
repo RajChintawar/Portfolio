@@ -26,10 +26,10 @@ var typed = new Typed("#typed", {
     "Hi, I'm Raj Chintawar !!!",
     "Engineering Student..",
     "Web Dev| Problem Solving| Tech Enthu|",
-      "Java| C++",
+      "Java| C++| Python|",
   ],
-  typeSpeed: 60,
-  backSpeed: 40,
+  typeSpeed: 70,
+  backSpeed: 50,
   loop: true
 });
 
