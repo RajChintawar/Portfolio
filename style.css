@@ -398,6 +398,7 @@ body.dark-mode {
 
 
 body.dark-mode nav ul li a {
+ background-color: #2a2a2a;
   color: #ffffff ; 
 }
 
