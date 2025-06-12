@@ -519,4 +519,26 @@ body.dark-mode .btn {
 body.dark-mode .btn:hover {
   background-color: #0088cc;
 }
+.resume-btn {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.resume-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+body.dark-mode .resume-btn {
+  background-color: #3399ff;
+  color: #ffffff;
+}
 
