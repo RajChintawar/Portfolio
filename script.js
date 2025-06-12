@@ -25,8 +25,8 @@ var typed = new Typed("#typed", {
   strings: [
     "Hi, I'm Raj Chintawar !!!",
     "Engineering Student..",
-    "Web Dev| Problem Solving| Tech Enthu|"
-    "Java| C++|"
+    "Web Dev| Problem Solving| Tech Enthu|",
+      "Java| C++",
   ],
   typeSpeed: 60,
   backSpeed: 40,
