@@ -275,7 +275,9 @@ footer .social-icons a {
 }
 
 footer .social-icons a:hover {
-  color: #007bff; /* Blue on hover */
+  color: #007bff; 
+  transform-scale:1.5;
+  /* Blue on hover */
 }
 
 body.dark-mode footer .social-icons a {
