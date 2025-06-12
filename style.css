@@ -542,3 +542,11 @@ body.dark-mode .resume-btn {
   color: #ffffff;
 }
 
+.intro-section {
+  background: linear-gradient(135deg, #e0f0ff, #ffffff);
+  padding: 80px 40px;
+  border-radius: 12px;
+}
+body.dark-mode .intro-section {
+  background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+}
