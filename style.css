@@ -277,6 +277,7 @@ footer .social-icons a {
 footer .social-icons a:hover {
   color: #007bff; 
   transform: scale(1.05);
+  z-index: 2;
 }
 
 body.dark-mode footer .social-icons a {
@@ -286,6 +287,8 @@ body.dark-mode footer .social-icons a {
 body.dark-mode footer .social-icons a:hover {
   color: #00aaff;
     transform: scale(1.05);
+    z-index: 2;
+
 
 }
 
