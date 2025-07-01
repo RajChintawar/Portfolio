@@ -634,6 +634,7 @@ body.dark-mode .menu-icon {
 
   body.dark-mode .nav-links {
     background: #2a2a2a;
+    color: whitesmoke;
   }
 
   .nav-links.show {
