@@ -645,5 +645,24 @@ body.dark-mode .menu-icon {
         color: whitesmoke;
 
   }
+body.dark-mode .nav-links a {
+  color: white;
+}
+
+body.dark-mode .nav-links {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+}
+
+body.dark-mode .nav-links a:hover {
+  color: #00aaff;
+}
+
+
+
+
+
+
+  
 }
 
