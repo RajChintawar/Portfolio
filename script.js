@@ -23,9 +23,9 @@ window.addEventListener("scroll", () => {
 
 var typed = new Typed("#typed", {
   strings: [
-    "Hi, I'm Raj Chintawar !!!",
-    "Engineering Student..",
-    "Web Dev| Problem Solving| Tech Enthu|",
+    "Hi, I'm Raj Chintawar !",
+    "Engineering Student",
+    "MERN-Stack Dev| Problem Solving| Tech Enthu|",
       "Java| C++| Python|",
   ],
   typeSpeed: 70,
