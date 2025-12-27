@@ -33,6 +33,20 @@ var typed = new Typed("#typed", {
   loop: true
 });
 
+
+function flipProfile() {
+  document.getElementById("profileCard").classList.toggle("flipped");
+}
+
+
+
+
+
+
+
+
+
+
 const toggleBtn = document.getElementById("theme-toggle");
 
 // Determine stored preference (light by default)
