@@ -34,11 +34,18 @@ var typed = new Typed("#typed", {
 });
 
 
-function flipProfile() {
-  document.getElementById("profileCard").classList.toggle("flipped");
-}
+const profileContainer = document.getElementById("profileContainer");
+const profileCard = document.getElementById("profileCard");
 
+// Mobile tap support (no double tap)
+profileContainer.addEventListener("touchstart", () => {
+  profileCard.classList.toggle("flipped");
+});
 
+// Optional: also allow click fallback
+profileContainer.addEventListener("click", () => {
+  profileCard.classList.toggle("flipped");
+});
 
 
 
