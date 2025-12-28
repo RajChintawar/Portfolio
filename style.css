@@ -104,6 +104,35 @@ nav ul li a.active {
   }
 }
 
+#theme-toggle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.05);
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+}
+
+#theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.12);
+  transform: rotate(10deg) scale(1.05);
+}
+
+body.dark-mode #theme-toggle {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+body.dark-mode #theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
 
 
 
@@ -447,6 +476,15 @@ body.dark-mode footer .social-icons a:hover {
 
 
 
+
+
+
+
+
+
+
+
+
 /*dark modeee   */
 body.dark-mode header {
   background: #121212;  /* darker */
@@ -661,12 +699,31 @@ body.dark-mode .tagline {
 /* Navbar dropdown button in mobile screens  */
 .menu-icon {
   display: none;
-  font-size: 28px;
-  background: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.05);
   border: none;
   cursor: pointer;
-  color: black;
+  font-size: 22px;
+  color: #111;
+  transition: all 0.25s ease;
 }
+
+.menu-icon:hover {
+  background: rgba(0, 0, 0, 0.12);
+  transform: scale(1.05);
+}
+
+body.dark-mode .menu-icon {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+body.dark-mode .menu-icon:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
 
 body.dark-mode .menu-icon {
   color: white;
@@ -681,11 +738,16 @@ body.dark-mode .menu-icon {
 
 @media screen and (max-width: 768px) {
   .menu-icon {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 16px;
+    left: 16px;
+    z-index: 1001;
   }
+}
+
 
 @media screen and (max-width: 768px) {
   .profile-container {
@@ -750,5 +812,5 @@ body.dark-mode .nav-links a:hover {
 
 
   
-}
+
 
