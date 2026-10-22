@@ -240,11 +240,31 @@ main {
   gap: 10px;
 }
 
+.Link a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  min-width: 0;
+  gap: 12px;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
 .Link img {
+  display: block;
   width: 100%;
   max-height: 200px;
   object-fit: cover;
   border-radius: 12px;
+}
+
+.Link p {
+  width: 100%;
+  padding: 0;
+  overflow-wrap: anywhere;
 }
 
 .Link:hover {
@@ -252,16 +272,6 @@ main {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   background-color: #e6f0ff;
 }
-
-.Link a{
-  margin-top: 10px;
-  color: #333;
-  font-size: 15px;
-  line-height: 1.5;
-  text-decoration: none;
-}
-
-
 
 /* BUTTON */
 /* button {
@@ -392,6 +402,10 @@ body.dark-mode footer .social-icons a:hover {
 
 /* RESPONSIVE MEDIA QUERIES */
 @media screen and (max-width: 768px) {
+  main {
+    padding: 16px;
+  }
+
   nav ul li {
     display: block;
     margin: 10px 0;
@@ -421,7 +435,12 @@ body.dark-mode footer .social-icons a:hover {
   }
 
   .Links {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 0;
+  }
+
+  .Link {
+    padding: 16px;
   }
 
   button {
@@ -430,6 +449,10 @@ body.dark-mode footer .social-icons a:hover {
 }
 
 @media screen and (max-width: 480px) {
+  main {
+    padding: 12px;
+  }
+
   nav ul p {
     text-align: center;
     font-size: 16px;
@@ -443,6 +466,15 @@ body.dark-mode footer .social-icons a:hover {
   .intro-image img {
     width: 140px;
     height: 140px;
+  }
+
+  .Link {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .Link img {
+    max-height: 180px;
   }
 
   h2 {
@@ -820,5 +852,4 @@ body.dark-mode .nav-links a:hover {
 
 
   
-
 
